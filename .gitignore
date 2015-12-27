@@ -9,6 +9,8 @@ out
 plugins/*
 !plugins/pencilblue
 !plugins/pencilblue/**
+!plugins/easybird
+!plugins/easybird/**
 !plugins/ga
 !plugins/ga/**
 !plugins/portfolio
