@@ -275,7 +275,7 @@ module.exports = function IndexModule(pb) {
         var contentUrlPrefix = isPage ? '/page/' : '/article/';
         self.ts.reprocess = false;
         ats.registerLocal('article_permalink', pb.UrlService.urlJoin(pb.config.siteRoot, contentUrlPrefix, content.url));
-        ats.registerLocal('article_headline', new pb.TemplateValue('<a href="' + pb.UrlService.urlJoin(contentUrlPrefix, content.url) + '">' + content.headline + '</a>', false));
+        ats.registerLocal('article_headline', new pb.TemplateValue('<a class="light-green-text" href="' + pb.UrlService.urlJoin(contentUrlPrefix, content.url) + '">' + content.headline + '</a>', false));
         ats.registerLocal('article_headline_nolink', content.headline);
         ats.registerLocal('article_subheading', content.subheading ? content.subheading : '');
         ats.registerLocal('article_subheading_display', content.subheading ? '' : 'display:none;');
