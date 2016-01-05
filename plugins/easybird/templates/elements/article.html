@@ -1,31 +1,10 @@
-<div id="more-info" class="container section scrollspy">
-    <div class="section">
-        <div id="article_^article_id^" class="article" article-index="^article_index^">
-            <!--   Icon Section   -->
-            <div class="row">
-                <div class="col s12">
-                    <div class="icon-block">
-                        <h4 class="left-align light-green-text">
-                            ^article_headline^
-                        </h4>
-
-                        <h5 class="left-align brown-text" style="^article_subheading_display^">
-                            ^article_subheading^
-                        </h5>
-
-                        <div class="article_body">
-                            <div class="small timestamp light-green-text" style="^article_timestamp_display^">^article_timestamp^ ~  by ^author_name^</div>
-                            <br>
-                            ^article_layout^
-                        </div>
-                        ^comments^
-                        <div class="spacer"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div ng-if="!isFullPage">
+^tmp_elements=article_list^
 </div>
+<div ng-if="isFullPage">
+^tmp_elements=single_article^
+</div>
+
 
 
 
