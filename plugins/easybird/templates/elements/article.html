@@ -1,10 +1,13 @@
-<div ng-if="!isFullPage">
-    ^tmp_elements=article_list^
+<div id="more-info" class="container section scrollspy">
+    <div class="section">
+        <div ng-if="!isFullPage">
+            ^tmp_elements=article_list^
+        </div>
+        <div ng-if="isFullPage">
+            ^tmp_elements=single_article^
+        </div>
+    </div>
 </div>
-<div ng-if="isFullPage">
-    ^tmp_elements=single_article^
-</div>
-
 
 
 
