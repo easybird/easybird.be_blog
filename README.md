@@ -22,3 +22,10 @@ Installation
  sudo forever start pencilblue.js
  ```
  ==> Navigate to the site root you specified in a configuration file or http://localhost:8080 by default.
+ 
+ 
+##Changes to default Pencilblue framework
+- Added a new plugin: Theme Easybird
+- Changes for media:
+* changes to article_service.js: media html tags made responsive
+* changes to youtube_media_renderer
